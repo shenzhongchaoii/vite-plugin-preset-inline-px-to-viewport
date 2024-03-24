@@ -1,0 +1,39 @@
+{
+  "name": "vite-plugin-preset-inline-px-to-viewport",
+  "author": "shenzhongchaoii",
+  "license": "MIT",
+  "version": "0.0.1",
+  "description": "应用于行内样式转化为 viewport 单位的 vite 插件",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "scripts": {
+    "stub": "unbuild --stub",
+    "build": "unbuild"
+  },
+  "dependencies": {
+    "cheerio": "1.0.0-rc.12",
+    "vue": "^3.3.13",
+    "vite": "^5.0.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.3",
+    "postcss": "^8.4.38",
+    "unbuild": "^2.0.0"
+  }
+}
